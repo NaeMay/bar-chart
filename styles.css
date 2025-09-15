@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #00b7eb; /* Neon cyan for tech aesthetic */
+  --accent-color: #39ff14; /* Neon green for hover effects */
+  --background-color: #1c2526; /* Dark background for cyber look */
+  --tooltip-bg: rgba(0, 183, 235, 0.9); /* Semi-transparent cyan tooltip */
+  --bar-color: #00b7eb; /* Cyan for bars */
+  --axis-color: #e0e0e0; /* Light gray for axes */
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: var(--background-color);
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 60px 60px; /* Circuit-like pattern */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+#title {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--primary-color);
+  margin-bottom: 20px;
+}
+
+#chart {
+  background-color: #2a2e2e; /* Dark tech background */
+  box-shadow: 0 0 15px rgba(0, 183, 235, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bar {
+  fill: var(--bar-color);
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.bar:hover {
+  fill: var(--accent-color);
+  transform: scale(1.05);
+}
+
+#tooltip {
+  position: absolute;
+  background-color: var(--tooltip-bg);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.axis path,
+.axis line {
+  stroke: var(--axis-color);
+}
+
+.axis text {
+  fill: var(--axis-color);
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 1.8em;
+  }
+
+  #chart {
+    padding: 10px;
+  }
+
+  .tooltip {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+}
