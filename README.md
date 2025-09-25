@@ -1,5 +1,5 @@
-bar-chart
-# Technology Industry Growth Bar Chart
+# bar-chart
+"Technology Industry Growth Bar Chart"
 
 ## Description
 Developed the **Technology Industry Growth Bar Chart** as part of freeCodeCamp’s Data Visualization certification. This D3.js-based project visualizes U.S. GDP growth from 1947 to 2015 as a proxy for technology industry growth, using data from the Bureau of Economic Analysis (via freeCodeCamp’s dataset). The chart features a futuristic, cyberpunk aesthetic with neon cyan (`#00b7eb`), neon green (`#39ff14`), and a dark circuit-patterned background, aligning with my **PatriotPlates AI** and **PatriotSecurity AI** branding for the 2026 launch. Inspired by Donald Trump’s no-tax-on-tips policy, Elon Musk’s AI innovation with xAI, and Gordon Ramsay’s pursuit of excellence, this project complements my roles as a **Front-End Developer**, **FoodTech Entrepreneur**, and **Cybersecurity Analyst** in **West Columbia, SC** (flexible for **Miami or Tampa, FL**). It integrates with my Stratford Cooking and Catering Diploma with Highest Honors and synergizes with **Nae’s PatriotPlates AI RPG Creature Search** and **PatriotPlates AI & PatriotSecurity AI Interactive Menu** through a shared futuristic theme. The project adheres to WCAG 2.1 Level AA accessibility standards and passes all 14 freeCodeCamp test cases.
